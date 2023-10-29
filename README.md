@@ -91,3 +91,22 @@ validation scoreが悪くなった＋leaderboard scoreも下がった\
 学習率を下げたのが良くなかったのかもしれない\
 → 学習が進まなくなってしまったのかもしれん\
 peakはtempの次点で重要な特徴量だったため一応採用（次からは学習率を0.01に戻して実験）\
+
+### exp007
+学習率を0.01に戻した\
+max_depthを無くした\
+validation score: 0.2857382955925689\
+private score: 0.39886\
+public score: 0.39886\
+validation scoreは改善したが、ベストスコアより悪い\
+日付特徴量を削除してみるとか
+
+### exp008
+日付特徴量を削除してみた\
+validation score: 0.28481298421844964\
+best valid score: 0.28487622196889606\
+private score: 0.40381\
+public score: 0.40381\
+leaderboard scoreが悪くなった\
+日付特徴量は一応有効だったみたいなので採用\
+今度は他モデルを試してみるか
