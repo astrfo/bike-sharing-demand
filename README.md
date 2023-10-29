@@ -41,3 +41,7 @@ validation score: 1.3144342441425931\
 private score: 1.31429\
 public score: 1.31429\
 あまり変わらないので過学習していないと思う
+
+### exp002
+kfold=5で学習\
+validation score: 1.2931299603117299
