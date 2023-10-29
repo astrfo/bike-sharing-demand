@@ -15,8 +15,15 @@ countの分布を確認
 datetimeを年、月、日、時、曜日に分割
 
 ## eda004
-年、月、日、時、曜日ごとのcountとの関係を確認
+年、月、日、時、曜日ごとのcountとの関係を確認\
 全体の相関を確認
 
 ## eda005
 hourごとのholiday, workingday, dayofweekとcountの関係を確認
+
+## eda006
+weatherとcountの関係を確認
+
+## eda007
+temp, atempとcountの関係を確認\
+temp, count, その他特徴量で散布図を見てみた
