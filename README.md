@@ -68,3 +68,13 @@ public score: 0.3978\
 leaderboardだと207位で良い感じ\
 やはりeda002通り、countの分布的に対数変換するのが良いみたい\
 ただ、validation scoreとprivate scoreに乖離があるので、過学習している可能性はあるなと\
+
+### exp005
+optunaでパラメータチューニング\
+実験管理をconfigクラスで行うようにしたい\
+validation score: 0.28244084306176426\
+private score: 0.4038\
+public score: 0.4038\
+初めて精度下がった\
+確実に過学習してる\
+学習率も0.00085とかなり低めなので過学習してる？他パラメータについても調べてみる\
