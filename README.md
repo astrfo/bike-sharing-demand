@@ -59,3 +59,12 @@ public score: 0.49256\
 特徴量的には、EDAしていた通り、hourは重要な特徴量だった\
 その他、year, workingday, temp, atempも重要な特徴量だった\
 次はOptuna使って最適なパラメータを探そうかな
+
+### exp004
+countを対数変換して学習\
+validation score: 0.28487622196889606\
+private score: 0.3978\
+public score: 0.3978\
+leaderboardだと207位で良い感じ\
+やはりeda002通り、countの分布的に対数変換するのが良いみたい\
+ただ、validation scoreとprivate scoreに乖離があるので、過学習している可能性はあるなと\
