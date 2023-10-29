@@ -33,6 +33,9 @@ temp, count, その他特徴量で散布図を見てみた
 ### eda008
 humidityとcountの関係を確認
 
+### eda009
+exp003で作った特徴量を使って相関を確認
+
 ## exp
 
 ### exp001
