@@ -45,3 +45,14 @@ public score: 1.31429\
 ### exp002
 kfold=5で学習\
 validation score: 1.2931299603117299
+
+### exp003
+datetimeを年、月、日、時、曜日に分割して活用\
+learning_rate=0.01に下げた\
+validation score: 0.42527243059731556\
+private score: 0.49256\
+public score: 0.49256\
+ちょっと過学習気味？0.07の差をどう見ればいいのかわからない\
+特徴量的には、EDAしていた通り、hourは重要な特徴量だった\
+その他、year, workingday, temp, atempも重要な特徴量だった\
+次はOptuna使って最適なパラメータを探そうかな
