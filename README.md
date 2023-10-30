@@ -110,3 +110,14 @@ public score: 0.40381\
 leaderboard scoreが悪くなった\
 日付特徴量は一応有効だったみたいなので採用\
 今度は他モデルを試してみるか
+
+### exp009
+日付特徴量は採用することにした\
+LightGBM RMSLE: 0.2857382955925689\
+XGBoost RMSLE: 0.2826146496758605\
+best validation score: 0.28487622196889606\
+private score: 0.3965\
+public score: 0.3965\
+best leaderboard score: 0.3978\
+他モデルとアンサンブルするとスコアが改善しそう\
+特徴量を増やす、他モデルとアンサンブルをメインで考えていく\
