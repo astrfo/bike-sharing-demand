@@ -124,3 +124,11 @@ best leaderboard score: 0.3978\
 
 ### exp010
 XGBoostのパラメータチューニング
+XGBoost RMSLE: 0.2816606419845005\
+private score: 0.40584\
+public score: 0.40584\
+XGBoostオンリーだとスコアが下がった。
+特徴量重要度的にはhourとpeakが重要だった。\
+→ peakはtempと相関が高いので、tempとpeakの積を特徴量として追加してみるとか？\
+個人的に思うこととしては集約特徴量を作ってみるとか、他モデルとアンサンブルするとか、\
+あとは、季節の数値の大小に左右されている説があるので、季節をone-hotにしてみるとか、\
