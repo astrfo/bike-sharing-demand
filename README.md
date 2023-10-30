@@ -123,7 +123,7 @@ best leaderboard score: 0.3978\
 特徴量を増やす、他モデルとアンサンブルをメインで考えていく
 
 ### exp010
-XGBoostのパラメータチューニング
+XGBoostにmax_depth=8を追加\
 XGBoost RMSLE: 0.2816606419845005\
 private score: 0.40584\
 public score: 0.40584\
@@ -132,3 +132,18 @@ XGBoostオンリーだとスコアが下がった。
 → peakはtempと相関が高いので、tempとpeakの積を特徴量として追加してみるとか？\
 個人的に思うこととしては集約特徴量を作ってみるとか、他モデルとアンサンブルするとか、\
 あとは、季節の数値の大小に左右されている説があるので、季節をone-hotにしてみるとか、\
+NNモデル使ってみたいかも
+
+### exp011
+hourにおけるtemp, atemp, humidity, windspeedを集約した特徴量std, mean, maxを追加\
+max_depth=6(default)に戻した(一番効いていたため)\
+XGBoostにおいてeval_metric=rmsleを追加\
+LightGBM RMSLE: 0.28672296876256603\
+XGBoost RMSLE: 0.2866959003236071\
+private score: 0.39519\
+public score: 0.39519\
+best leaderboard score: 0.3965\
+leaderboardだと187位で良い感じ\
+集約特徴量は効いているみたい\
+LightGBMとXGBoostにおいて、効いている特徴量が異なるのでアンサンブルで良い感じになってるのかも\
+→ 他モデルとアンサンブルするとスコアが改善しそう\
