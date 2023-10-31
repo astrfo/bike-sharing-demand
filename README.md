@@ -146,4 +146,9 @@ best leaderboard score: 0.3965\
 leaderboardだと187位で良い感じ\
 集約特徴量は効いているみたい\
 LightGBMとXGBoostにおいて、効いている特徴量が異なるのでアンサンブルで良い感じになってるのかも\
-→ 他モデルとアンサンブルするとスコアが改善しそう\
+→ 他モデルとアンサンブルするとスコアが改善しそう
+
+### exp012
+RandomForestRegressorを追加\
+binだとkaggleの方でevalできなかったため、容量大きいけどpickleで保存することにしないとダメっぽい\
+容量的には、kaggle側で110GBくらい保存できるからいけるかも
